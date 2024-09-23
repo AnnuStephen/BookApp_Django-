@@ -1,0 +1,21 @@
+{% extends 'admin/base.html' %}  <!-- Template inheritance  -->
+{ % load static %}
+
+{% block content %}
+
+<h1> Delete Book {{book.title}}</h1>
+
+<form action="" method="POST">
+
+    {% csrf_token %}
+    <div class="row">
+        <div class="col-md-3"><h2>Are u sure ?</h2></div>
+        <div class="col-md-3"><input type="submit" value="Confirm Delete" class="btn btn-warning"></div>
+
+
+
+
+</div>
+</form>
+
+{% endblock %}
